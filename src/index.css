@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.dark {
+  color: red !important;
+}
+
+.light {
+  color: green !important;
+}
+
+.darkbtn {
+  color: yellow !important;
+}
+
+.lightbtn {
+  color: violet !important;
+}
