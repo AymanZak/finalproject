@@ -76,17 +76,3 @@ export default function AddComment({elementId, setAdd, add}) {
 
 
 
-
-/* let obj  = { name: 'mario', lastName: 'rossi', city: 'Paris'}
-let obj2 = obj;
-let obj3;
-Object.assign(obj3, obj);
-let obj4 = { ...obj }
-
-obj2.name = 'Antonio';
-console.log(obj.name);
-console.log(obj2.name);
-
-
-console.log(obj);
-console.log(...obj) */

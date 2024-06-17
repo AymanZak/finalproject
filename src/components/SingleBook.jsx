@@ -25,7 +25,6 @@ export default function SingleBook({ book, selected, setSelected }) {
           >Book Details</Button>
         </Card.Body>
       </Card>
-      {/* {selected && <CommentArea asin={book.asin} />} */}
     </Col>
   );
 }

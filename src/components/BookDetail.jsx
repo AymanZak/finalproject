@@ -7,7 +7,7 @@ import CommentArea from './CommentArea';
 export default function BookDetail() {
 
     const { asin } = useParams();
-    const book = fantasy.find( b => b.asin === asin); // {} || undefined
+    const book = fantasy.find( b => b.asin === asin); 
     
     console.log(book)
   return (

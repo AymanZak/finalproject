@@ -2,13 +2,6 @@ import React, { useState } from 'react'
 import { Button, Row } from 'react-bootstrap';
 import SearchBook from './SearchBook';
 
-/* let users = [
-    {id:1, name: 'John', lastName: 'Smith', email: 'john.smith@example.com'},
-    {id:2, name: 'Mario', lastName: 'Rossi', email: 'mario.rossi@example.com'},
-    {id:3, name: 'Francesca', lastName: 'Neri', email: 'francesca.neri@example.com'},
-    {id:4, name: 'James', lastName: 'Red', email: 'john.red@example.com'}
-] */
-
 export default function UserComponent() {
     
     const [users, setUsers] = useState([]);
