@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, ListGroup } from 'react-bootstrap'
-/* import axios from 'axios' */
+
 import axios from '../modules/ApiAxios'
 
 export default function SingleComment({comment,setAdd,add}) {

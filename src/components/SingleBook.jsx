@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function SingleBook({ book, selected, setSelected }) {
 
-    /* const  [selected, setSelected] = useState(false); */
+    
     let [themeCtx, setThemeCtx] = useContext(ThemeContext);
     let navigate = useNavigate();
 
@@ -14,9 +14,15 @@ export default function SingleBook({ book, selected, setSelected }) {
 
   return (
     <Col>
-      <Card bg={themeCtx} data-bs-theme={themeCtx} style={{ width: "18rem", border: selected === book.asin ? '2px solid red' : 'none' }} 
-      onClick={() => setSelected(book.asin)}>
-        <Card.Img variant="top" src={book.img} />
+      <Card bg={themeCtx} 
+       data-bs-theme={themeCtx}
+       style={{ width: "18rem", border: selected === book.asin ? '2px solid red' : 'none' }} 
+       onClick={() => setSelected(book.asin)}
+       data-testid="boob-ccard"
+      
+      >
+      
+      <Card.Img variant="top" src={book.img} />
         <Card.Body>
           <Card.Title>{book.title}</Card.Title>
           <Button 

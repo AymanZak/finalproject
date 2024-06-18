@@ -11,20 +11,11 @@ import { ThemeContext, AuthContext } from './modules/Contexts';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NotFound from './components/NotFound';
 import BookDetail from './components/BookDetail';
+import React, { useRef } from 'react';
+
 
 
 function App() {
-
-  /* let type = 'fantasy';
-  let setType = (val) => {
-    type = val;
-  } */
-/* 
-  let pippo = useState('fantasy');
-  console.log(pippo);
-
-  let type = pippo[0];
-  let setType = pippo[1]; */
 
   let [type, setType] = useState('fantasy');
   const [search, setSearch] = useState('');
