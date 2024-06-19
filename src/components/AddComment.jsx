@@ -25,22 +25,6 @@ export default function AddComment({elementId, setAdd, add}) {
 
   let sendComment = () => {
     console.log(comments)
-    /* fetch('https://striveschool-api.herokuapp.com/api/comments/', {
-      method: 'POST',
-      body: JSON.stringify(comments),
-      headers: { 
-        'Content-Type': 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjNjY2M2NzgxODQ0MjAwMTUzNzU3NWIiLCJpYXQiOjE3MTcxNjAzMTcsImV4cCI6MTcxODM2OTkxN30.bqrIYq7VrpiQgG5X885HS2AfENPgUz0dSGUkrW357Ek' 
-      }
-    }).then(response => response.json())
-      .then(data => {
-        // se tutto va a buon fine
-        // console.log(data)
-        // alert('Il commento è stato aggiunto!!!!')
-        setAdd(!add)
-        setComments({comment: '', rate: 0, elementId: elementId})
-      })
-      .catch(error => console.error(error)) */
     axios.post('/comments/', comments).then(response => {
       setAdd(!add)
       setComments({comment: '', rate: 0, elementId: elementId})
